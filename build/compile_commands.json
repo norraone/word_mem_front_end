@@ -1,0 +1,20 @@
+[
+{
+  "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\impl_1_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\build\\impl_1_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/Seler/CLionProjects/impl_1/build/impl_1_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj"
+},
+{
+  "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\main.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\main.cpp",
+  "file": "C:/Users/Seler/CLionProjects/impl_1/main.cpp",
+  "output": "CMakeFiles/impl_1.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\mainwindow.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\mainwindow.cpp",
+  "file": "C:/Users/Seler/CLionProjects/impl_1/mainwindow.cpp",
+  "output": "CMakeFiles/impl_1.dir/mainwindow.cpp.obj"
+}
+]

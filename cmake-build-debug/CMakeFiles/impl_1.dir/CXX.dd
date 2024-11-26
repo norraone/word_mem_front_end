@@ -1,0 +1,5 @@
+ninja_dyndep_version = 1.0
+build CMakeFiles/impl_1.dir/main.cpp.obj: dyndep
+
+build CMakeFiles/impl_1.dir/mainwindow.cpp.obj: dyndep
+

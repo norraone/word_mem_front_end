@@ -1,0 +1,27 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "GNU",
+	"compiler-id" : "GNU",
+	"compiler-simulate-id" : "",
+	"config" : "Debug",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/Seler/CLionProjects/impl_1/cmake-build-debug",
+	"dir-cur-src" : "C:/Users/Seler/CLionProjects/impl_1",
+	"dir-top-bld" : "C:/Users/Seler/CLionProjects/impl_1/cmake-build-debug",
+	"dir-top-src" : "C:/Users/Seler/CLionProjects/impl_1",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : 
+	[
+		"impl_1_autogen\\include",
+		"C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include",
+		"C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore",
+		"C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\.\\mkspecs\\win32-g++",
+		"C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets",
+		"C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui",
+		"C:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtANGLE"
+	],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/Seler/CLionProjects/impl_1/cmake-build-debug/CMakeFiles/impl_1.dir"
+}
