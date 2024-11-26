@@ -42,6 +42,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Core.dll"
     "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Gui.dll"
     "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Widgets.dll"
+    "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Sql.dll"
     )
 endif()
 

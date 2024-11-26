@@ -23,6 +23,8 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QAction>
+#include <QtWidgets/QActionGroup>
+#include "userdatabase.h"
 
 class MainWindow : public QMainWindow {
 Q_OBJECT
@@ -37,6 +39,8 @@ private slots:
     void onAboutTriggered();
     void onExitTriggered();
     void onClearTriggered();
+    void changeFontSize(QAction* action);
+    void changeFontFamily(QAction* action);
 
 private:
     void setupUi();
@@ -44,6 +48,9 @@ private:
     void createButtons();
     void setupConnections();
     void createMenuBar();
+    void createFontMenu();
+    void createFontFamilyMenu();
+    void updateFontStyle();
 
     // UI Elements
     QWidget *centralWidget;
@@ -68,9 +75,18 @@ private:
     QMenu *fileMenu;
     QMenu *editMenu;
     QMenu *helpMenu;
+    QMenu *fontMenu;
+    QMenu *fontFamilyMenu;
     QAction *exitAction;
     QAction *clearAction;
     QAction *aboutAction;
+    QActionGroup *fontSizeGroup;
+    QActionGroup *fontFamilyGroup;
+    QString currentFontFamily;
+    int currentFontSize;
+
+    // Database
+    UserDatabase *userDb;
 };
 
 #endif //MAINWINDOW_H

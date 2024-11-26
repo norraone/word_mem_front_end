@@ -1,0 +1,58 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"include"
+		],
+		"files" : 
+		[
+			"C:/msys64/mingw64/share/cmake/Modules/InstallRequiredSystemLibraries.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 80,
+				"parent" : 0
+			},
+			{
+				"file" : 0,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 798,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Core.dll",
+				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Gui.dll",
+				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Widgets.dll",
+				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Sql.dll"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

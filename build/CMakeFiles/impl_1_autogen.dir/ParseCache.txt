@@ -3,3 +3,9 @@ C:/Users/Seler/CLionProjects/impl_1/mainwindow.cpp
 C:/Users/Seler/CLionProjects/impl_1/main.cpp
 C:/Users/Seler/CLionProjects/impl_1/mainwindow.h
  mmc:Q_OBJECT
+C:/Users/Seler/CLionProjects/impl_1/customwidget.cpp
+C:/Users/Seler/CLionProjects/impl_1/customwidget.h
+ mmc:Q_OBJECT
+C:/Users/Seler/CLionProjects/impl_1/userdatabase.h
+ mmc:Q_OBJECT
+C:/Users/Seler/CLionProjects/impl_1/userdatabase.cpp

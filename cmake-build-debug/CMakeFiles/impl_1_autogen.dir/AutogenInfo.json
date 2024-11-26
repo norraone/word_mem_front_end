@@ -83,6 +83,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/Seler/CLionProjects/impl_1/customwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_customwidget.cpp",
+			null
+		],
+		[
 			"C:/Users/Seler/CLionProjects/impl_1/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -140,6 +146,7 @@
 	"SETTINGS_FILE" : "C:/Users/Seler/CLionProjects/impl_1/cmake-build-debug/CMakeFiles/impl_1_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "C:/Users/Seler/CLionProjects/impl_1/customwidget.cpp", "MU", null ],
 		[ "C:/Users/Seler/CLionProjects/impl_1/main.cpp", "MU", null ],
 		[ "C:/Users/Seler/CLionProjects/impl_1/mainwindow.cpp", "MU", null ]
 	],

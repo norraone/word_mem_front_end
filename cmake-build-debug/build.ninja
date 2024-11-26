@@ -73,6 +73,14 @@ build CMakeFiles/impl_1.dir/mainwindow.cpp.obj: CXX_COMPILER__impl_1_unscanned_D
   OBJECT_DIR = CMakeFiles\impl_1.dir
   OBJECT_FILE_DIR = CMakeFiles\impl_1.dir
 
+build CMakeFiles/impl_1.dir/customwidget.cpp.obj: CXX_COMPILER__impl_1_unscanned_Debug C$:/Users/Seler/CLionProjects/impl_1/customwidget.cpp || cmake_object_order_depends_target_impl_1
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles\impl_1.dir\customwidget.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/Seler/CLionProjects/impl_1/cmake-build-debug/impl_1_autogen/include -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/./mkspecs/win32-g++ -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui -isystem C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtANGLE
+  OBJECT_DIR = CMakeFiles\impl_1.dir
+  OBJECT_FILE_DIR = CMakeFiles\impl_1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target impl_1
@@ -81,7 +89,7 @@ build CMakeFiles/impl_1.dir/mainwindow.cpp.obj: CXX_COMPILER__impl_1_unscanned_D
 #############################################
 # Link the executable impl_1.exe
 
-build impl_1.exe: CXX_EXECUTABLE_LINKER__impl_1_Debug CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj CMakeFiles/impl_1.dir/main.cpp.obj CMakeFiles/impl_1.dir/mainwindow.cpp.obj | C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Widgets.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Gui.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Core.a || impl_1_autogen
+build impl_1.exe: CXX_EXECUTABLE_LINKER__impl_1_Debug CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj CMakeFiles/impl_1.dir/main.cpp.obj CMakeFiles/impl_1.dir/mainwindow.cpp.obj CMakeFiles/impl_1.dir/customwidget.cpp.obj | C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Widgets.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Gui.a C$:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Core.a || impl_1_autogen
   FLAGS = -g
   LINK_LIBRARIES = C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Widgets.a  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Gui.a  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Core.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\impl_1.dir

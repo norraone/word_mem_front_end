@@ -186,6 +186,30 @@ impl_1_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1_autogen.dir\build.make CMakeFiles/impl_1_autogen.dir/build
 .PHONY : impl_1_autogen/fast
 
+customwidget.obj: customwidget.cpp.obj
+.PHONY : customwidget.obj
+
+# target to build an object file
+customwidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/customwidget.cpp.obj
+.PHONY : customwidget.cpp.obj
+
+customwidget.i: customwidget.cpp.i
+.PHONY : customwidget.i
+
+# target to preprocess a source file
+customwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/customwidget.cpp.i
+.PHONY : customwidget.cpp.i
+
+customwidget.s: customwidget.cpp.s
+.PHONY : customwidget.s
+
+# target to generate assembly for a file
+customwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/customwidget.cpp.s
+.PHONY : customwidget.cpp.s
+
 impl_1_autogen/mocs_compilation.obj: impl_1_autogen/mocs_compilation.cpp.obj
 .PHONY : impl_1_autogen/mocs_compilation.obj
 
@@ -258,6 +282,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+userdatabase.obj: userdatabase.cpp.obj
+.PHONY : userdatabase.obj
+
+# target to build an object file
+userdatabase.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/userdatabase.cpp.obj
+.PHONY : userdatabase.cpp.obj
+
+userdatabase.i: userdatabase.cpp.i
+.PHONY : userdatabase.i
+
+# target to preprocess a source file
+userdatabase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/userdatabase.cpp.i
+.PHONY : userdatabase.cpp.i
+
+userdatabase.s: userdatabase.cpp.s
+.PHONY : userdatabase.s
+
+# target to generate assembly for a file
+userdatabase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/userdatabase.cpp.s
+.PHONY : userdatabase.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -272,6 +320,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... impl_1_autogen
 	@echo ... impl_1
+	@echo ... customwidget.obj
+	@echo ... customwidget.i
+	@echo ... customwidget.s
 	@echo ... impl_1_autogen/mocs_compilation.obj
 	@echo ... impl_1_autogen/mocs_compilation.i
 	@echo ... impl_1_autogen/mocs_compilation.s
@@ -281,6 +332,9 @@ help:
 	@echo ... mainwindow.obj
 	@echo ... mainwindow.i
 	@echo ... mainwindow.s
+	@echo ... userdatabase.obj
+	@echo ... userdatabase.i
+	@echo ... userdatabase.s
 .PHONY : help
 
 
