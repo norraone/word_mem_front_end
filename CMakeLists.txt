@@ -13,21 +13,32 @@ set(CMAKE_PREFIX_PATH "C:/Qt/Qt5.14.2/5.14.2/mingw73_64")
 set(Qt5_DIR "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5")
 
 # Find Qt packages
-find_package(Qt5 COMPONENTS Core Gui Widgets Sql REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Widgets Sql Network REQUIRED)
 
-add_executable(impl_1 main.cpp
+# Add the resource files
+set(RESOURCE_FILES
+    resources.qrc
+)
+
+add_executable(impl_1 
+        main.cpp
         mainwindow.cpp
         mainwindow.h
         customwidget.cpp
         customwidget.h
         userdatabase.cpp
-        userdatabase.h)
+        userdatabase.h
+        wordwidget.cpp
+        wordwidget.h
+        ${RESOURCE_FILES}
+)
 
 target_link_libraries(impl_1 PRIVATE
     Qt5::Core
     Qt5::Gui
     Qt5::Widgets
     Qt5::Sql
+    Qt5::Network
 )
 
 # Deploy Qt dependencies
@@ -64,7 +75,7 @@ if(WIN32)
                 "$<TARGET_FILE_DIR:${PROJECT_NAME}>/plugins/sqldrivers/")
     endif()
 
-    foreach(QT_LIB Core Gui Widgets Sql)
+    foreach(QT_LIB Core Gui Widgets Sql Network)
         add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
             COMMAND ${CMAKE_COMMAND} -E copy
                 "${QT_INSTALL_PATH}/bin/Qt5${QT_LIB}${DEBUG_SUFFIX}.dll"
@@ -76,5 +87,5 @@ endif()
 include(${CMAKE_PREFIX_PATH}/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake)
 get_target_property(Qt5_Core_Location Qt5::Core LOCATION)
 get_filename_component(Qt5_Core_Path ${Qt5_Core_Location} PATH)
-set(CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS ${Qt5_Core_Path}/Qt5Core.dll ${Qt5_Core_Path}/Qt5Gui.dll ${Qt5_Core_Path}/Qt5Widgets.dll ${Qt5_Core_Path}/Qt5Sql.dll)
+set(CMAKE_INSTALL_SYSTEM_RUNTIME_LIBS ${Qt5_Core_Path}/Qt5Core.dll ${Qt5_Core_Path}/Qt5Gui.dll ${Qt5_Core_Path}/Qt5Widgets.dll ${Qt5_Core_Path}/Qt5Sql.dll ${Qt5_Core_Path}/Qt5Network.dll)
 include(InstallRequiredSystemLibraries)

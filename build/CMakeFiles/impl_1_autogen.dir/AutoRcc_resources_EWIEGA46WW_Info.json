@@ -1,0 +1,31 @@
+{
+	"BUILD_DIR" : "C:/Users/Seler/CLionProjects/impl_1/build/impl_1_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Seler/CLionProjects/impl_1/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Seler/CLionProjects/impl_1/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Seler/CLionProjects/impl_1",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Seler/CLionProjects/impl_1",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "MinGW Makefiles",
+	"INCLUDE_DIR" : "C:/Users/Seler/CLionProjects/impl_1/build/impl_1_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/Seler/CLionProjects/impl_1/icons/register.png",
+		"C:/Users/Seler/CLionProjects/impl_1/icons/login.png",
+		"C:/Users/Seler/CLionProjects/impl_1/icons/help.png",
+		"C:/Users/Seler/CLionProjects/impl_1/icons/edit.png",
+		"C:/Users/Seler/CLionProjects/impl_1/icons/add.png",
+		"C:/Users/Seler/CLionProjects/impl_1/icons/app_icon.png",
+		"C:/Users/Seler/CLionProjects/impl_1/icons/delete.png"
+	],
+	"LOCK_FILE" : "C:/Users/Seler/CLionProjects/impl_1/build/CMakeFiles/impl_1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/Seler/CLionProjects/impl_1/build/CMakeFiles/impl_1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/Seler/CLionProjects/impl_1/resources.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

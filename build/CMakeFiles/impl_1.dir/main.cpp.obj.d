@@ -681,4 +681,19 @@ CMakeFiles/impl_1.dir/main.cpp.obj: \
  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtSql/QSqlError \
  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QString \
- C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QCryptographicHash
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QCryptographicHash \
+ C:\Users\Seler\CLionProjects\impl_1\wordwidget.h \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QWidget \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qwidget.h \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QLabel \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QLineEdit \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QStackedWidget \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qstackedwidget.h \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QComboBox \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qcombobox.h \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QTimer \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QVector \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QPair \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QDate

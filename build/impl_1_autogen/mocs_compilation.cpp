@@ -2,3 +2,4 @@
 #include "EWIEGA46WW/moc_customwidget.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_userdatabase.cpp"
+#include "EWIEGA46WW/moc_wordwidget.cpp"

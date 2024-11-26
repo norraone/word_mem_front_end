@@ -25,6 +25,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QActionGroup>
 #include "userdatabase.h"
+#include "wordwidget.h"
 
 class MainWindow : public QMainWindow {
 Q_OBJECT
@@ -39,8 +40,8 @@ private slots:
     void onAboutTriggered();
     void onExitTriggered();
     void onClearTriggered();
-    void changeFontSize(QAction* action);
-    void changeFontFamily(QAction* action);
+    void setLightTheme();
+    void setBlueTheme();
 
 private:
     void setupUi();
@@ -48,9 +49,9 @@ private:
     void createButtons();
     void setupConnections();
     void createMenuBar();
-    void createFontMenu();
-    void createFontFamilyMenu();
-    void updateFontStyle();
+    void createMenus();
+    void createActions();
+    void applyTheme(const QString& theme);
 
     // UI Elements
     QWidget *centralWidget;
@@ -75,18 +76,19 @@ private:
     QMenu *fileMenu;
     QMenu *editMenu;
     QMenu *helpMenu;
-    QMenu *fontMenu;
-    QMenu *fontFamilyMenu;
     QAction *exitAction;
     QAction *clearAction;
     QAction *aboutAction;
-    QActionGroup *fontSizeGroup;
-    QActionGroup *fontFamilyGroup;
-    QString currentFontFamily;
-    int currentFontSize;
 
     // Database
     UserDatabase *userDb;
+
+    // Theme
+    WordWidget *wordWidget;
+    UserDatabase userDatabase;
+    QMenu *themeMenu;
+    QAction *lightThemeAct;
+    QAction *blueThemeAct;
 };
 
 #endif //MAINWINDOW_H

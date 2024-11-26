@@ -19,7 +19,7 @@
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 80,
+				"line" : 91,
 				"parent" : 0
 			},
 			{
@@ -45,7 +45,8 @@
 				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Core.dll",
 				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Gui.dll",
 				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Widgets.dll",
-				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Sql.dll"
+				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Sql.dll",
+				"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Network.dll"
 			],
 			"type" : "file"
 		}

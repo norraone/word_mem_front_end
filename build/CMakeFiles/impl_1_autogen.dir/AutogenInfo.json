@@ -77,9 +77,13 @@
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Sql/Qt5Sql_QODBCDriverPlugin.cmake",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Sql/Qt5Sql_QPSQLDriverPlugin.cmake",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Sql/Qt5Sql_QSQLiteDriverPlugin.cmake",
+		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake",
+		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake",
+		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
-		"C:/msys64/mingw64/share/cmake/Modules/InstallRequiredSystemLibraries.cmake"
+		"C:/msys64/mingw64/share/cmake/Modules/InstallRequiredSystemLibraries.cmake",
+		"C:/Users/Seler/CLionProjects/impl_1/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/Seler/CLionProjects/impl_1",
 	"CROSS_CONFIG" : false,
@@ -104,12 +108,25 @@
 			"MU",
 			"EWIEGA46WW/moc_userdatabase.cpp",
 			null
+		],
+		[
+			"C:/Users/Seler/CLionProjects/impl_1/wordwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_wordwidget.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Users/Seler/CLionProjects/impl_1/build/impl_1_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/Users/Seler/CLionProjects/impl_1/build/impl_1_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_SQL_LIB",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -126,6 +143,7 @@
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtANGLE",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets",
 		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtSql",
+		"C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtNetwork",
 		"C:/msys64/mingw64/include/c++/14.2.0",
 		"C:/msys64/mingw64/include/c++/14.2.0/x86_64-w64-mingw32",
 		"C:/msys64/mingw64/include/c++/14.2.0/backward",
@@ -161,7 +179,8 @@
 		[ "C:/Users/Seler/CLionProjects/impl_1/customwidget.cpp", "MU", null ],
 		[ "C:/Users/Seler/CLionProjects/impl_1/main.cpp", "MU", null ],
 		[ "C:/Users/Seler/CLionProjects/impl_1/mainwindow.cpp", "MU", null ],
-		[ "C:/Users/Seler/CLionProjects/impl_1/userdatabase.cpp", "MU", null ]
+		[ "C:/Users/Seler/CLionProjects/impl_1/userdatabase.cpp", "MU", null ],
+		[ "C:/Users/Seler/CLionProjects/impl_1/wordwidget.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

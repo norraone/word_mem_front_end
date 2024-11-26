@@ -210,6 +210,30 @@ customwidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/customwidget.cpp.s
 .PHONY : customwidget.cpp.s
 
+impl_1_autogen/EWIEGA46WW/qrc_resources.obj: impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : impl_1_autogen/EWIEGA46WW/qrc_resources.obj
+
+# target to build an object file
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+
+impl_1_autogen/EWIEGA46WW/qrc_resources.i: impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : impl_1_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+impl_1_autogen/EWIEGA46WW/qrc_resources.s: impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : impl_1_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 impl_1_autogen/mocs_compilation.obj: impl_1_autogen/mocs_compilation.cpp.obj
 .PHONY : impl_1_autogen/mocs_compilation.obj
 
@@ -306,6 +330,30 @@ userdatabase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/userdatabase.cpp.s
 .PHONY : userdatabase.cpp.s
 
+wordwidget.obj: wordwidget.cpp.obj
+.PHONY : wordwidget.obj
+
+# target to build an object file
+wordwidget.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/wordwidget.cpp.obj
+.PHONY : wordwidget.cpp.obj
+
+wordwidget.i: wordwidget.cpp.i
+.PHONY : wordwidget.i
+
+# target to preprocess a source file
+wordwidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/wordwidget.cpp.i
+.PHONY : wordwidget.cpp.i
+
+wordwidget.s: wordwidget.cpp.s
+.PHONY : wordwidget.s
+
+# target to generate assembly for a file
+wordwidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\impl_1.dir\build.make CMakeFiles/impl_1.dir/wordwidget.cpp.s
+.PHONY : wordwidget.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -323,6 +371,9 @@ help:
 	@echo ... customwidget.obj
 	@echo ... customwidget.i
 	@echo ... customwidget.s
+	@echo ... impl_1_autogen/EWIEGA46WW/qrc_resources.obj
+	@echo ... impl_1_autogen/EWIEGA46WW/qrc_resources.i
+	@echo ... impl_1_autogen/EWIEGA46WW/qrc_resources.s
 	@echo ... impl_1_autogen/mocs_compilation.obj
 	@echo ... impl_1_autogen/mocs_compilation.i
 	@echo ... impl_1_autogen/mocs_compilation.s
@@ -335,6 +386,9 @@ help:
 	@echo ... userdatabase.obj
 	@echo ... userdatabase.i
 	@echo ... userdatabase.s
+	@echo ... wordwidget.obj
+	@echo ... wordwidget.i
+	@echo ... wordwidget.s
 .PHONY : help
 
 

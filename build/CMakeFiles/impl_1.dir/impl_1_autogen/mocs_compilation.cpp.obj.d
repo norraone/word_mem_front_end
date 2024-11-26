@@ -681,5 +681,20 @@ CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtSql/QSqlError \
  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QString \
  C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QCryptographicHash \
+ C:/Users/Seler/CLionProjects/impl_1/wordwidget.h \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QLabel \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QLineEdit \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QStackedWidget \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qstackedwidget.h \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/QComboBox \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/qcombobox.h \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QTimer \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QVector \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QPair \
+ C:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/QDate \
  C:\Users\Seler\CLionProjects\impl_1\build\impl_1_autogen\EWIEGA46WW/moc_userdatabase.cpp \
- C:/Users/Seler/CLionProjects/impl_1/userdatabase.h
+ C:/Users/Seler/CLionProjects/impl_1/userdatabase.h \
+ C:\Users\Seler\CLionProjects\impl_1\build\impl_1_autogen\EWIEGA46WW/moc_wordwidget.cpp \
+ C:/Users/Seler/CLionProjects/impl_1/wordwidget.h

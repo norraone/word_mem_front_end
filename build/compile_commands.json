@@ -1,32 +1,44 @@
 [
 {
   "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\impl_1_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\build\\impl_1_autogen\\mocs_compilation.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\impl_1_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\build\\impl_1_autogen\\mocs_compilation.cpp",
   "file": "C:/Users/Seler/CLionProjects/impl_1/build/impl_1_autogen/mocs_compilation.cpp",
   "output": "CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj"
 },
 {
   "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\main.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\main.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\main.cpp",
   "file": "C:/Users/Seler/CLionProjects/impl_1/main.cpp",
   "output": "CMakeFiles/impl_1.dir/main.cpp.obj"
 },
 {
   "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\mainwindow.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\mainwindow.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\mainwindow.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\mainwindow.cpp",
   "file": "C:/Users/Seler/CLionProjects/impl_1/mainwindow.cpp",
   "output": "CMakeFiles/impl_1.dir/mainwindow.cpp.obj"
 },
 {
   "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\customwidget.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\customwidget.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\customwidget.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\customwidget.cpp",
   "file": "C:/Users/Seler/CLionProjects/impl_1/customwidget.cpp",
   "output": "CMakeFiles/impl_1.dir/customwidget.cpp.obj"
 },
 {
   "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\userdatabase.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\userdatabase.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\userdatabase.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\userdatabase.cpp",
   "file": "C:/Users/Seler/CLionProjects/impl_1/userdatabase.cpp",
   "output": "CMakeFiles/impl_1.dir/userdatabase.cpp.obj"
+},
+{
+  "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\wordwidget.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\wordwidget.cpp",
+  "file": "C:/Users/Seler/CLionProjects/impl_1/wordwidget.cpp",
+  "output": "CMakeFiles/impl_1.dir/wordwidget.cpp.obj"
+},
+{
+  "directory": "C:/Users/Seler/CLionProjects/impl_1/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB @CMakeFiles/impl_1.dir/includes_CXX.rsp -g -std=gnu++20 -o CMakeFiles\\impl_1.dir\\impl_1_autogen\\EWIEGA46WW\\qrc_resources.cpp.obj -c C:\\Users\\Seler\\CLionProjects\\impl_1\\build\\impl_1_autogen\\EWIEGA46WW\\qrc_resources.cpp",
+  "file": "C:/Users/Seler/CLionProjects/impl_1/build/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp",
+  "output": "CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 }
 ]

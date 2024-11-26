@@ -68,11 +68,25 @@ include CMakeFiles/impl_1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/impl_1.dir/flags.make
 
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/resources.qrc
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/impl_1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/icons/register.png
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/icons/login.png
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/icons/help.png
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/icons/edit.png
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/icons/add.png
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/icons/app_icon.png
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/Seler/CLionProjects/impl_1/icons/delete.png
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/rcc.exe
+impl_1_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources.qrc"
+	C:\msys64\mingw64\bin\cmake.exe -E cmake_autorcc C:/Users/Seler/CLionProjects/impl_1/build/CMakeFiles/impl_1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug
+
 CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj: CMakeFiles/impl_1.dir/flags.make
 CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj: CMakeFiles/impl_1.dir/includes_CXX.rsp
 CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj: impl_1_autogen/mocs_compilation.cpp
 CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj: CMakeFiles/impl_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\impl_1.dir\impl_1_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\impl_1.dir\impl_1_autogen\mocs_compilation.cpp.obj -c C:\Users\Seler\CLionProjects\impl_1\build\impl_1_autogen\mocs_compilation.cpp
 
 CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.i: cmake_force
@@ -87,7 +101,7 @@ CMakeFiles/impl_1.dir/main.cpp.obj: CMakeFiles/impl_1.dir/flags.make
 CMakeFiles/impl_1.dir/main.cpp.obj: CMakeFiles/impl_1.dir/includes_CXX.rsp
 CMakeFiles/impl_1.dir/main.cpp.obj: C:/Users/Seler/CLionProjects/impl_1/main.cpp
 CMakeFiles/impl_1.dir/main.cpp.obj: CMakeFiles/impl_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/impl_1.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/impl_1.dir/main.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impl_1.dir/main.cpp.obj -MF CMakeFiles\impl_1.dir\main.cpp.obj.d -o CMakeFiles\impl_1.dir\main.cpp.obj -c C:\Users\Seler\CLionProjects\impl_1\main.cpp
 
 CMakeFiles/impl_1.dir/main.cpp.i: cmake_force
@@ -102,7 +116,7 @@ CMakeFiles/impl_1.dir/mainwindow.cpp.obj: CMakeFiles/impl_1.dir/flags.make
 CMakeFiles/impl_1.dir/mainwindow.cpp.obj: CMakeFiles/impl_1.dir/includes_CXX.rsp
 CMakeFiles/impl_1.dir/mainwindow.cpp.obj: C:/Users/Seler/CLionProjects/impl_1/mainwindow.cpp
 CMakeFiles/impl_1.dir/mainwindow.cpp.obj: CMakeFiles/impl_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/impl_1.dir/mainwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/impl_1.dir/mainwindow.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impl_1.dir/mainwindow.cpp.obj -MF CMakeFiles\impl_1.dir\mainwindow.cpp.obj.d -o CMakeFiles\impl_1.dir\mainwindow.cpp.obj -c C:\Users\Seler\CLionProjects\impl_1\mainwindow.cpp
 
 CMakeFiles/impl_1.dir/mainwindow.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/impl_1.dir/customwidget.cpp.obj: CMakeFiles/impl_1.dir/flags.make
 CMakeFiles/impl_1.dir/customwidget.cpp.obj: CMakeFiles/impl_1.dir/includes_CXX.rsp
 CMakeFiles/impl_1.dir/customwidget.cpp.obj: C:/Users/Seler/CLionProjects/impl_1/customwidget.cpp
 CMakeFiles/impl_1.dir/customwidget.cpp.obj: CMakeFiles/impl_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/impl_1.dir/customwidget.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/impl_1.dir/customwidget.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impl_1.dir/customwidget.cpp.obj -MF CMakeFiles\impl_1.dir\customwidget.cpp.obj.d -o CMakeFiles\impl_1.dir\customwidget.cpp.obj -c C:\Users\Seler\CLionProjects\impl_1\customwidget.cpp
 
 CMakeFiles/impl_1.dir/customwidget.cpp.i: cmake_force
@@ -132,7 +146,7 @@ CMakeFiles/impl_1.dir/userdatabase.cpp.obj: CMakeFiles/impl_1.dir/flags.make
 CMakeFiles/impl_1.dir/userdatabase.cpp.obj: CMakeFiles/impl_1.dir/includes_CXX.rsp
 CMakeFiles/impl_1.dir/userdatabase.cpp.obj: C:/Users/Seler/CLionProjects/impl_1/userdatabase.cpp
 CMakeFiles/impl_1.dir/userdatabase.cpp.obj: CMakeFiles/impl_1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/impl_1.dir/userdatabase.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/impl_1.dir/userdatabase.cpp.obj"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impl_1.dir/userdatabase.cpp.obj -MF CMakeFiles\impl_1.dir\userdatabase.cpp.obj.d -o CMakeFiles\impl_1.dir\userdatabase.cpp.obj -c C:\Users\Seler\CLionProjects\impl_1\userdatabase.cpp
 
 CMakeFiles/impl_1.dir/userdatabase.cpp.i: cmake_force
@@ -143,13 +157,45 @@ CMakeFiles/impl_1.dir/userdatabase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impl_1.dir/userdatabase.cpp.s"
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Seler\CLionProjects\impl_1\userdatabase.cpp -o CMakeFiles\impl_1.dir\userdatabase.cpp.s
 
+CMakeFiles/impl_1.dir/wordwidget.cpp.obj: CMakeFiles/impl_1.dir/flags.make
+CMakeFiles/impl_1.dir/wordwidget.cpp.obj: CMakeFiles/impl_1.dir/includes_CXX.rsp
+CMakeFiles/impl_1.dir/wordwidget.cpp.obj: C:/Users/Seler/CLionProjects/impl_1/wordwidget.cpp
+CMakeFiles/impl_1.dir/wordwidget.cpp.obj: CMakeFiles/impl_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/impl_1.dir/wordwidget.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impl_1.dir/wordwidget.cpp.obj -MF CMakeFiles\impl_1.dir\wordwidget.cpp.obj.d -o CMakeFiles\impl_1.dir\wordwidget.cpp.obj -c C:\Users\Seler\CLionProjects\impl_1\wordwidget.cpp
+
+CMakeFiles/impl_1.dir/wordwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/impl_1.dir/wordwidget.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Seler\CLionProjects\impl_1\wordwidget.cpp > CMakeFiles\impl_1.dir\wordwidget.cpp.i
+
+CMakeFiles/impl_1.dir/wordwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impl_1.dir/wordwidget.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Seler\CLionProjects\impl_1\wordwidget.cpp -o CMakeFiles\impl_1.dir\wordwidget.cpp.s
+
+CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/impl_1.dir/flags.make
+CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/impl_1.dir/includes_CXX.rsp
+CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj: impl_1_autogen/EWIEGA46WW/qrc_resources.cpp
+CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/impl_1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\impl_1.dir\impl_1_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\impl_1.dir\impl_1_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c C:\Users\Seler\CLionProjects\impl_1\build\impl_1_autogen\EWIEGA46WW\qrc_resources.cpp
+
+CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Seler\CLionProjects\impl_1\build\impl_1_autogen\EWIEGA46WW\qrc_resources.cpp > CMakeFiles\impl_1.dir\impl_1_autogen\EWIEGA46WW\qrc_resources.cpp.i
+
+CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Seler\CLionProjects\impl_1\build\impl_1_autogen\EWIEGA46WW\qrc_resources.cpp -o CMakeFiles\impl_1.dir\impl_1_autogen\EWIEGA46WW\qrc_resources.cpp.s
+
 # Object files for target impl_1
 impl_1_OBJECTS = \
 "CMakeFiles/impl_1.dir/impl_1_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/impl_1.dir/main.cpp.obj" \
 "CMakeFiles/impl_1.dir/mainwindow.cpp.obj" \
 "CMakeFiles/impl_1.dir/customwidget.cpp.obj" \
-"CMakeFiles/impl_1.dir/userdatabase.cpp.obj"
+"CMakeFiles/impl_1.dir/userdatabase.cpp.obj" \
+"CMakeFiles/impl_1.dir/wordwidget.cpp.obj" \
+"CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target impl_1
 impl_1_EXTERNAL_OBJECTS =
@@ -159,15 +205,18 @@ impl_1.exe: CMakeFiles/impl_1.dir/main.cpp.obj
 impl_1.exe: CMakeFiles/impl_1.dir/mainwindow.cpp.obj
 impl_1.exe: CMakeFiles/impl_1.dir/customwidget.cpp.obj
 impl_1.exe: CMakeFiles/impl_1.dir/userdatabase.cpp.obj
+impl_1.exe: CMakeFiles/impl_1.dir/wordwidget.cpp.obj
+impl_1.exe: CMakeFiles/impl_1.dir/impl_1_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 impl_1.exe: CMakeFiles/impl_1.dir/build.make
 impl_1.exe: C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Widgets.a
 impl_1.exe: C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Sql.a
+impl_1.exe: C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Network.a
 impl_1.exe: C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Gui.a
 impl_1.exe: C:/Qt/Qt5.14.2/5.14.2/mingw73_64/lib/libQt5Core.a
 impl_1.exe: CMakeFiles/impl_1.dir/linkLibs.rsp
 impl_1.exe: CMakeFiles/impl_1.dir/objects1.rsp
 impl_1.exe: CMakeFiles/impl_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable impl_1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable impl_1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\impl_1.dir\link.txt --verbose=$(VERBOSE)
 	C:\msys64\mingw64\bin\cmake.exe -E make_directory C:/Users/Seler/CLionProjects/impl_1/build/plugins/platforms/
 	C:\msys64\mingw64\bin\cmake.exe -E copy C:/Qt/Qt5.14.2/5.14.2/mingw73_64/plugins/platforms/qwindows.dll C:/Users/Seler/CLionProjects/impl_1/build/plugins/platforms/
@@ -177,6 +226,7 @@ impl_1.exe: CMakeFiles/impl_1.dir/link.txt
 	C:\msys64\mingw64\bin\cmake.exe -E copy C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Gui.dll C:/Users/Seler/CLionProjects/impl_1/build
 	C:\msys64\mingw64\bin\cmake.exe -E copy C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Widgets.dll C:/Users/Seler/CLionProjects/impl_1/build
 	C:\msys64\mingw64\bin\cmake.exe -E copy C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Sql.dll C:/Users/Seler/CLionProjects/impl_1/build
+	C:\msys64\mingw64\bin\cmake.exe -E copy C:/Qt/Qt5.14.2/5.14.2/mingw73_64/bin/Qt5Network.dll C:/Users/Seler/CLionProjects/impl_1/build
 
 # Rule to build all files generated by this target.
 CMakeFiles/impl_1.dir/build: impl_1.exe
@@ -186,7 +236,7 @@ CMakeFiles/impl_1.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\impl_1.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/impl_1.dir/clean
 
-CMakeFiles/impl_1.dir/depend:
+CMakeFiles/impl_1.dir/depend: impl_1_autogen/EWIEGA46WW/qrc_resources.cpp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Seler\CLionProjects\impl_1 C:\Users\Seler\CLionProjects\impl_1 C:\Users\Seler\CLionProjects\impl_1\build C:\Users\Seler\CLionProjects\impl_1\build C:\Users\Seler\CLionProjects\impl_1\build\CMakeFiles\impl_1.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/impl_1.dir/depend
 

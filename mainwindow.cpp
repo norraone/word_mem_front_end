@@ -12,8 +12,6 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    currentFontFamily = "OpenSans";  // Default font
-    currentFontSize = 36;         // Changed default size to 48
     userDb = new UserDatabase(this); // Initialize database
     if (!userDb->initialize()) {
         QMessageBox::critical(this, "Error", "Failed to initialize database: " + userDb->lastError());
@@ -25,7 +23,8 @@ MainWindow::MainWindow(QWidget *parent)
     setupConnections();
     
     // Apply a soft blue theme
-    updateFontStyle();
+    applyTheme("blue");
+    blueThemeAct->setChecked(true);
 }
 
 MainWindow::~MainWindow()
@@ -46,10 +45,8 @@ MainWindow::~MainWindow()
     delete clearAction;
     delete helpMenu;
     delete aboutAction;
-    delete fontMenu;
-    delete fontSizeGroup;
-    delete fontFamilyMenu;
-    delete fontFamilyGroup;
+    delete lightThemeAct;
+    delete blueThemeAct;
     // Database is deleted automatically since it's a child of MainWindow
 }
 
@@ -58,12 +55,30 @@ void MainWindow::setupUi()
     // Create main window layout
     centralWidget = new QWidget(this);
     mainLayout = new QVBoxLayout(centralWidget);
-    formLayout = new QGridLayout();
-    
+    mainLayout->setSpacing(16);  // Material Design spacing
+    mainLayout->setContentsMargins(24, 24, 24, 24);  // Material Design margins
+
+    // Create a card-like container for the form
+    QWidget* formCard = new QWidget(this);
+    formCard->setObjectName("formCard");
+    formCard->setStyleSheet(
+        "QWidget#formCard {"
+        "   background-color: white;"
+        "   border-radius: 8px;"
+        "   padding: 24px;"
+        "   margin: 8px;"
+        "}"
+    );
+
+    formLayout = new QGridLayout(formCard);
+    formLayout->setSpacing(16);
+    formLayout->setContentsMargins(24, 24, 24, 24);
+
     // Set window properties
-    setWindowTitle("Login System");
-    resize(800, 600);  // Increased window size
-    
+    setWindowTitle("Vocabulary Learning App");
+    setWindowIcon(QIcon(":/icons/app_icon.png"));
+    resize(800, 600);  // Set a good default size
+
     // Create status label
     statusLabel = new QLabel("Welcome! Please login or sign up.", centralWidget);
     statusLabel->setAlignment(Qt::AlignCenter);
@@ -71,146 +86,226 @@ void MainWindow::setupUi()
     // Add status label to main layout
     mainLayout->addWidget(statusLabel);
     
+    // Add form layout to main layout
+    mainLayout->addWidget(formCard);
+    
     // Set central widget
     setCentralWidget(centralWidget);
 }
 
 void MainWindow::createMenuBar()
 {
-    // 创建菜单栏
-    menuBar = new QMenuBar(this);
+    QMenuBar *menuBar = new QMenuBar(this);
     setMenuBar(menuBar);
 
-    // 创建文件菜单
+    // File Menu
     fileMenu = menuBar->addMenu(tr("&File"));
-    exitAction = new QAction(tr("&Exit"), this);
+    exitAction = new QAction(QIcon(":/icons/exit.png"), tr("&Exit"), this);
     exitAction->setShortcut(tr("Ctrl+Q"));
     fileMenu->addAction(exitAction);
 
-    // 创建编辑菜单
+    // Theme Menu
+    themeMenu = menuBar->addMenu(tr("&Theme"));
+    lightThemeAct = new QAction(tr("&Light"), this);
+    lightThemeAct->setCheckable(true);
+    connect(lightThemeAct, &QAction::triggered, this, &MainWindow::setLightTheme);
+
+    blueThemeAct = new QAction(tr("&Blue"), this);
+    blueThemeAct->setCheckable(true);
+    connect(blueThemeAct, &QAction::triggered, this, &MainWindow::setBlueTheme);
+
+    QActionGroup *themeGroup = new QActionGroup(this);
+    themeGroup->addAction(lightThemeAct);
+    themeGroup->addAction(blueThemeAct);
+    blueThemeAct->setChecked(true);  // Default theme
+
+    themeMenu->addAction(lightThemeAct);
+    themeMenu->addAction(blueThemeAct);
+
+    // Edit Menu
     editMenu = menuBar->addMenu(tr("&Edit"));
-    clearAction = new QAction(tr("&Clear Fields"), this);
+    clearAction = new QAction(QIcon(":/icons/clear.png"), tr("&Clear Fields"), this);
     clearAction->setShortcut(tr("Ctrl+L"));
     editMenu->addAction(clearAction);
 
-    // 创建字体菜单
-    createFontMenu();
-    createFontFamilyMenu();
-
-    // 创建帮助菜单 (moved to last)
+    // Help Menu
     helpMenu = menuBar->addMenu(tr("&Help"));
-    aboutAction = new QAction(tr("&About"), this);
+    aboutAction = new QAction(QIcon(":/icons/help.png"), tr("&About"), this);
     helpMenu->addAction(aboutAction);
 
-    // 连接信号和槽
+    // Connect signals and slots
     connect(exitAction, &QAction::triggered, this, &MainWindow::onExitTriggered);
     connect(clearAction, &QAction::triggered, this, &MainWindow::onClearTriggered);
     connect(aboutAction, &QAction::triggered, this, &MainWindow::onAboutTriggered);
 }
 
-void MainWindow::createFontMenu()
-{
-    fontMenu = menuBar->addMenu(tr("&Font Size"));
-    fontSizeGroup = new QActionGroup(this);
-    fontSizeGroup->setExclusive(true);
+void MainWindow::setLightTheme() {
+    applyTheme("light");
+    lightThemeAct->setChecked(true);
+    blueThemeAct->setChecked(false);
+}
 
-    QList<int> fontSizes = {8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 32, 36, 40, 48};
-    for (int size : fontSizes) {
-        QAction* sizeAction = new QAction(QString::number(size), this);
-        sizeAction->setCheckable(true);
-        sizeAction->setData(size);
-        if (size == currentFontSize) sizeAction->setChecked(true);
-        fontSizeGroup->addAction(sizeAction);
-        fontMenu->addAction(sizeAction);
+void MainWindow::setBlueTheme() {
+    applyTheme("blue");
+    blueThemeAct->setChecked(true);
+    lightThemeAct->setChecked(false);
+}
+
+void MainWindow::applyTheme(const QString& theme) {
+    // Common Material Design styles
+    QString commonStyles = 
+        "QWidget { font-family: 'Roboto', sans-serif; }"
+        "QPushButton { "
+        "   border-radius: 20px; "
+        "   min-width: 88px; "
+        "   min-height: 36px; "
+        "   padding: 8px 16px; "
+        "   font-weight: 500; "
+        "   text-transform: uppercase; "
+        "   border: none;"
+        "}"
+        "QPushButton:hover { "
+        "   margin-top: -2px; "
+        "   margin-bottom: 2px; "
+        "}"
+        "QPushButton:pressed { "
+        "   margin-top: 2px; "
+        "   margin-bottom: -2px; "
+        "}"
+        "QLineEdit { "
+        "   border-radius: 4px; "
+        "   padding: 8px 12px; "
+        "   min-height: 36px; "
+        "   border: none; "
+        "   margin: 8px 0; "
+        "   background: transparent; "
+        "}"
+        "QMenuBar { "
+        "   border: none; "
+        "   min-height: 48px; "
+        "   padding: 8px; "
+        "   spacing: 12px; "
+        "}"
+        "QMenuBar::item { "
+        "   padding: 12px 20px; "
+        "   margin: 4px 8px; "
+        "   border-radius: 6px; "
+        "   font-size: 14px; "
+        "}"
+        "QMenu { "
+        "   border: 1px solid rgba(0, 0, 0, 0.1); "
+        "   padding: 12px 0; "
+        "   margin: 8px 0; "
+        "   min-width: 250px; "
+        "}"
+        "QMenu::item { "
+        "   padding: 16px 32px; "
+        "   font-size: 14px; "
+        "   min-height: 32px; "
+        "   margin: 8px 12px; "
+        "   border-radius: 6px; "
+        "}"
+        "QMenu::separator { "
+        "   height: 1px; "
+        "   margin: 12px 0; "
+        "}"
+        "QMenu::indicator { "
+        "   width: 18px; "
+        "   height: 18px; "
+        "   margin-left: 8px; "
+        "}"
+        "QMenu::right-arrow { "
+        "   margin: 8px; "
+        "   width: 16px; "
+        "   height: 16px; "
+        "}";
+
+    QString styleSheet;
+    
+    if (theme == "light") {
+        styleSheet = commonStyles +
+            "QMainWindow, QWidget { background-color: #fafafa; color: #212121; }"
+            "QPushButton { "
+            "   background-color: #2196F3; "
+            "   color: white; "
+            "   border: 2px solid #1976D2; "
+            "}"
+            "QPushButton:hover { "
+            "   background-color: #1976D2; "
+            "}"
+            "QPushButton:pressed { "
+            "   background-color: #1565C0; "
+            "}"
+            "QLineEdit { "
+            "   background-color: white; "
+            "   color: #212121; "
+            "   border-bottom: 2px solid #BDBDBD; "
+            "}"
+            "QLineEdit:focus { "
+            "   border-bottom: 2px solid #2196F3; "
+            "}"
+            "QMenuBar { "
+            "   background-color: white; "
+            "   color: #212121; "
+            "   border-bottom: 1px solid #E0E0E0; "
+            "}"
+            "QMenuBar::item:selected { "
+            "   background-color: #E3F2FD; "
+            "}"
+            "QMenu { "
+            "   background-color: white; "
+            "   border: 1px solid #E0E0E0; "
+            "}"
+            "QMenu::item:selected { "
+            "   background-color: #E3F2FD; "
+            "}"
+            "QMenu::separator { "
+            "   background-color: #EEEEEE; "
+            "}";
+    }
+    else if (theme == "blue") {
+        styleSheet = commonStyles +
+            "QMainWindow, QWidget { background-color: #E3F2FD; color: #212121; }"
+            "QPushButton { "
+            "   background-color: #1E88E5; "
+            "   color: white; "
+            "   border: 2px solid #1976D2; "
+            "}"
+            "QPushButton:hover { "
+            "   background-color: #1976D2; "
+            "}"
+            "QPushButton:pressed { "
+            "   background-color: #1565C0; "
+            "}"
+            "QLineEdit { "
+            "   background-color: white; "
+            "   color: #212121; "
+            "   border-bottom: 2px solid #90CAF9; "
+            "}"
+            "QLineEdit:focus { "
+            "   border-bottom: 2px solid #1E88E5; "
+            "}"
+            "QMenuBar { "
+            "   background-color: #1E88E5; "
+            "   color: white; "
+            "   border-bottom: 1px solid #1976D2; "
+            "}"
+            "QMenuBar::item:selected { "
+            "   background-color: #1976D2; "
+            "}"
+            "QMenu { "
+            "   background-color: white; "
+            "   border: 1px solid #90CAF9; "
+            "}"
+            "QMenu::item:selected { "
+            "   background-color: #E3F2FD; "
+            "}"
+            "QMenu::separator { "
+            "   background-color: #E3F2FD; "
+            "}";
     }
 
-    connect(fontSizeGroup, &QActionGroup::triggered, this, &MainWindow::changeFontSize);
-}
-
-void MainWindow::createFontFamilyMenu()
-{
-    fontFamilyMenu = menuBar->addMenu(tr("&Font Family"));
-    fontFamilyGroup = new QActionGroup(this);
-    fontFamilyGroup->setExclusive(true);
-
-    QStringList fontFamilies = {
-        "Arial", "Helvetica", "Times New Roman", "Courier New",
-        "Verdana", "Georgia", "Calibri", "Tahoma", "Segoe UI",
-        "Roboto", "Open Sans", "Lato", "Ubuntu"
-    };
-
-    for (const QString& family : fontFamilies) {
-        QAction* familyAction = new QAction(family, this);
-        familyAction->setCheckable(true);
-        familyAction->setData(family);
-        if (family == currentFontFamily) familyAction->setChecked(true);
-        fontFamilyGroup->addAction(familyAction);
-        fontFamilyMenu->addAction(familyAction);
-    }
-
-    connect(fontFamilyGroup, &QActionGroup::triggered, this, &MainWindow::changeFontFamily);
-}
-
-void MainWindow::changeFontSize(QAction* action)
-{
-    currentFontSize = action->data().toInt();
-    updateFontStyle();
-}
-
-void MainWindow::changeFontFamily(QAction* action)
-{
-    currentFontFamily = action->data().toString();
-    updateFontStyle();
-}
-
-void MainWindow::updateFontStyle()
-{
-    QString newStyle = QString(
-        "QWidget {\n"
-        "    background-color: #F0F8FF;\n"
-        "} \n"
-        "QPushButton {\n"
-        "    background-color: #B0E0E6;\n"
-        "    color: #2F4F4F;\n"
-        "    border-radius: 8px;\n"
-        "    padding: 8px 15px;\n"
-        "    border: 1px solid #ADD8E6;\n"
-        "    font-family: '%1';\n"
-        "    font-size: %2px;\n"
-        "} \n"
-        "QPushButton:hover {\n"
-        "    background-color: #ADD8E6;\n"
-        "} \n"
-        "QLineEdit {\n"
-        "    background-color: white;\n"
-        "    border: 2px solid #B0E0E6;\n"
-        "    border-radius: 6px;\n"
-        "    padding: 5px;\n"
-        "    font-family: '%1';\n"
-        "    font-size: %2px;\n"
-        "}\n"
-        "QLabel {\n"
-        "    color: #4682B4;\n"
-        "    font-family: '%1';\n"
-        "    font-size: %2px;\n"
-        "}\n"
-        "QMenuBar {\n"
-        "    background-color: #F0F8FF;\n"
-        "    border-bottom: 1px solid #B0E0E6;\n"
-        "    font-family: '%1';\n"
-        "    font-size: %2px;\n"
-        "}\n"
-        "QMenuBar::item:selected {\n"
-        "    background-color: #B0E0E6;\n"
-        "}\n"
-        "QMenu {\n"
-        "    font-family: '%1';\n"
-        "    font-size: %2px;\n"
-        "}")
-        .arg(currentFontFamily)
-        .arg(currentFontSize);
-
-    setStyleSheet(newStyle);
+    setStyleSheet(styleSheet);
 }
 
 void MainWindow::createLoginForm()
@@ -229,9 +324,6 @@ void MainWindow::createLoginForm()
     formLayout->addWidget(usernameInput, 0, 1);
     formLayout->addWidget(passwordLabel, 1, 0);
     formLayout->addWidget(passwordInput, 1, 1);
-    
-    // Add form layout to main layout
-    mainLayout->addLayout(formLayout);
 }
 
 void MainWindow::createButtons()
@@ -240,8 +332,8 @@ void MainWindow::createButtons()
     QHBoxLayout *buttonLayout = new QHBoxLayout();
     
     // Create buttons
-    loginButton = new QPushButton("Login", centralWidget);
-    signUpButton = new QPushButton("Sign Up", centralWidget);
+    loginButton = new QPushButton(QIcon(":/icons/login.png"), tr("Login"), centralWidget);
+    signUpButton = new QPushButton(QIcon(":/icons/register.png"), tr("Sign Up"), centralWidget);
     
     // Add buttons to layout
     buttonLayout->addWidget(loginButton);

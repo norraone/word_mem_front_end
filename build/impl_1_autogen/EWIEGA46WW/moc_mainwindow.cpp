@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[11];
-    char stringdata0[141];
+    QByteArrayData data[9];
+    char stringdata0[120];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,16 +39,14 @@ QT_MOC_LITERAL(3, 27, 15), // "onSignUpClicked"
 QT_MOC_LITERAL(4, 43, 16), // "onAboutTriggered"
 QT_MOC_LITERAL(5, 60, 15), // "onExitTriggered"
 QT_MOC_LITERAL(6, 76, 16), // "onClearTriggered"
-QT_MOC_LITERAL(7, 93, 14), // "changeFontSize"
-QT_MOC_LITERAL(8, 108, 8), // "QAction*"
-QT_MOC_LITERAL(9, 117, 6), // "action"
-QT_MOC_LITERAL(10, 124, 16) // "changeFontFamily"
+QT_MOC_LITERAL(7, 93, 13), // "setLightTheme"
+QT_MOC_LITERAL(8, 107, 12) // "setBlueTheme"
 
     },
     "MainWindow\0onLoginClicked\0\0onSignUpClicked\0"
     "onAboutTriggered\0onExitTriggered\0"
-    "onClearTriggered\0changeFontSize\0"
-    "QAction*\0action\0changeFontFamily"
+    "onClearTriggered\0setLightTheme\0"
+    "setBlueTheme"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,8 +69,8 @@ static const uint qt_meta_data_MainWindow[] = {
        4,    0,   51,    2, 0x08 /* Private */,
        5,    0,   52,    2, 0x08 /* Private */,
        6,    0,   53,    2, 0x08 /* Private */,
-       7,    1,   54,    2, 0x08 /* Private */,
-      10,    1,   57,    2, 0x08 /* Private */,
+       7,    0,   54,    2, 0x08 /* Private */,
+       8,    0,   55,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -80,8 +78,8 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 8,    9,
-    QMetaType::Void, 0x80000000 | 8,    9,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -97,29 +95,12 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 2: _t->onAboutTriggered(); break;
         case 3: _t->onExitTriggered(); break;
         case 4: _t->onClearTriggered(); break;
-        case 5: _t->changeFontSize((*reinterpret_cast< QAction*(*)>(_a[1]))); break;
-        case 6: _t->changeFontFamily((*reinterpret_cast< QAction*(*)>(_a[1]))); break;
+        case 5: _t->setLightTheme(); break;
+        case 6: _t->setBlueTheme(); break;
         default: ;
         }
-    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        switch (_id) {
-        default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-        case 5:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-            case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QAction* >(); break;
-            }
-            break;
-        case 6:
-            switch (*reinterpret_cast<int*>(_a[1])) {
-            default: *reinterpret_cast<int*>(_a[0]) = -1; break;
-            case 0:
-                *reinterpret_cast<int*>(_a[0]) = qRegisterMetaType< QAction* >(); break;
-            }
-            break;
-        }
     }
+    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {
@@ -156,7 +137,7 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
         if (_id < 7)
-            qt_static_metacall(this, _c, _id, _a);
+            *reinterpret_cast<int*>(_a[0]) = -1;
         _id -= 7;
     }
     return _id;
